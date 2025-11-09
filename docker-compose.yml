@@ -11,7 +11,7 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true   # для hot reload в контейнере
     volumes:
-      - ../multibank-frontend:/app            # чтобы изменения на хосте подтягивались
+#      - ../multibank-frontend:/app            # чтобы изменения на хосте подтягивались
       - /app/node_modules          # исключаем node_modules хоста
     depends_on:
       - backend
